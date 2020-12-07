@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - ProCards</title>
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- font awesome -->
+    <script src="js/all.min.js"></script>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav>
+      <div class="nav">
+        <!-- nav header -->
+        <div class="nav-header">
+          <!-- logo -->
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./svg-icons/logo.svg" class="logo-img" alt="logo" />
+              <p>pro<span>Cards</span></p>
+            </a>
+          </div>
+          <!-- hamburger -->
+          <div class="btn-container">
+            <div class="menu-btn">
+              <!-- open -->
+              <span class="open-btn">
+                <i class="fas fa-bars"></i>
+              </span>
+              <!-- close -->
+              <span class="close-btn">
+                <i class="fas fa-times"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- end of nav-header -->
+        <!-- nav links -->
+        <div class="links-container">
+          <ul class="nav-links">
+            <li class="nav-item"><a class="scroll-links" href="#">about</a></li>
+            <li class="nav-item">
+              <a class="scroll-links" id="contact-link" href="#contact"
+                >contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navigation -->
+    <!-- header -->
+    <header class="hero" id="goto"></header>
+    <!-- end of header -->
+    <!-- season -->
+    <div class="season">
+      <h3>men's Team</h3>
+      <h2>profile card 20/21</h2>
+    </div>
+    <!-- end of season -->
+    <!-- about section -->
+    <section class="about-container">
+      <div class="about">
+        <div class="title">
+          <h2>about ProCards</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="about-info">
+          <p>Look who's here!!</p>
+          <p>
+            Hello, my name is <span>Que</span>, a budding front-end web
+            developer from Nigeria. You guessed right, lol! I'm also a Manchester United Football Club
+            supporter.
+          </p>
+          <p>
+            The aim of this project was to build a web app that displays the
+            profiles of players searched by users. informations like, the - age,
+            height, position, shirt No and country. this app was built with the
+            data collected from google
+          </p>
+          <p class="navigate">
+            <a href="./index.html#goto"
+              >Go check your favorite players profile cards out now
+              <i class="fa fa-heart"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- bookmark -->
+    <!-- this can be anywhere since its going to be positioned absolutely -->
+    <div class="snap">
+      <div class="bookmark">
+        <a href="#goto"><i class="fas fa-chevron-up"></i></a>
+      </div>
+    </div>
+    <!-- contact -->
+    <div class="contact-wrapper" id="contact">
+      <div class="contact">
+        <p>Reach Me!</p>
+        <!-- social media -->
+        <div class="social-contact">
+          <!-- mail -->
+          <div class="icon">
+            <a href="#"><img src="./svg-icons/gmail.svg" alt="gmail" /></a>
+          </div>
+          <!-- facebook -->
+          <div class="icon">
+            <a href="#"
+              ><img src="./svg-icons/facebook.svg" alt="facebook"
+            /></a>
+          </div>
+          <!-- twitter -->
+          <div class="icon">
+            <a href="#"><img src="./svg-icons/twitter.svg" alt="twitter" /></a>
+          </div>
+        </div>
+        <!-- close-btn -->
+        <span class="close-modal">
+          <i class="fas fa-times"></i>
+        </span>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer container">
+        <p>
+          Built with <i class="fa fa-heart"></i> by <span>Feso Que</span>.
+          Copyright &copy;
+          <span id="date"></span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="about.js"></script>
+  </body>
+</html>
