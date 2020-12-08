@@ -112,7 +112,6 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
   background-color: var(--clr-gold);
-  /* border-bottom: 5px solid var(--clr-darkgrey); */
   position: relative;
 }
 .nav {
@@ -127,19 +126,18 @@ nav {
 .logo {
   display: flex;
   align-items: center;
-  position: relative;
 }
 .logo a {
   color: var(--primary-clr-white);
 }
 .logo-img {
-  width: 105px;
+  width: 100px;
+  height: 58px;
   position: absolute;
-  left: -35px;
-  top: -5.3px;
+  left: -33px;
 }
 .logo p {
-  margin-left: 1.9em;
+  margin-left: 1.85em;
 }
 .nav-header .logo p {
   font-weight: 450;
@@ -153,8 +151,10 @@ nav {
 .open-btn,
 .close-btn {
   position: absolute;
-  font-size: 1.85rem;
+  font-size: 2rem;
   right: 0;
+  top: -2px;
+  margin-right: 0.15em;
   cursor: pointer;
   transition: all 0.5s ease;
 }
@@ -169,7 +169,7 @@ nav {
   left: 0;
   right: 0;
   box-shadow: var(--dark-shadow);
-  z-index: 999;
+  z-index: 99999;
 }
 /* nav-links */
 .links-container {
@@ -181,6 +181,7 @@ nav {
   list-style: none;
 }
 .nav-links a {
+  font-size: 1.1rem;
   color: var(--primary-clr-white);
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -242,13 +243,15 @@ nav {
 }
 .season h3 {
   text-transform: uppercase;
-  margin-bottom: 0.4em;
   color: var(--primary-clr-white);
+  margin: 0;
+  margin-bottom: 0.4em;
 }
 .season h2 {
   text-transform: uppercase;
   color: var(--clr-gold);
-  margin-bottom: 0.3em;
+  /* margin-bottom: 0.3em; */
+  margin: 0;
 }
 /*
 ==================
@@ -272,7 +275,8 @@ nav {
   text-decoration: none;
   font-weight: 500;
   color: var(--clr-darkgrey);
-  text-transform: capitalize;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
   margin-left: 1em;
   background-color: var(--primary-clr-red);
   border: 2.5px solid var(--primary-clr-red);
@@ -303,12 +307,14 @@ nav {
 .search-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .searchbar {
-  border: 2px solid var(--clr-gold);
+  border: 1px solid var(--clr-gold);
   background-color: var(--primary-clr-black);
   border-radius: var(--radius);
-  padding: 0.4em 0.2rem;
+  font-size: 0.85rem;
+  padding: 0.3em;
 }
 .searchbar-input {
   color: var(--primary-clr-white);
@@ -322,6 +328,7 @@ nav {
   color: var(--clr-gold);
 }
 .fa-search {
+  font-size: 1rem;
   color: var(--primary-clr-white);
 }
 /* select option */
@@ -333,7 +340,8 @@ select {
   color: var(--primary-clr-white);
   background-color: var(--primary-clr-black);
   border: 1px solid var(--clr-grey-10);
-  cursor: pointer;border-radius: var(--radius);
+  cursor: pointer;
+  border-radius: var(--radius);
 }
 .select:focus,
 .select:hover {
@@ -554,7 +562,7 @@ footer {
   }
   .nav-header .logo p {
     font-size: 1.9rem;
-    margin-left: 1.9em;
+    margin-left: 2.4em;
   }
   .menu-btn {
     display: none;
