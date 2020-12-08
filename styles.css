@@ -308,7 +308,7 @@ nav {
   border: 2px solid var(--clr-gold);
   background-color: var(--primary-clr-black);
   border-radius: var(--radius);
-  padding: 0.5em 0.2rem;
+  padding: 0.4em 0.2rem;
 }
 .searchbar-input {
   color: var(--primary-clr-white);
