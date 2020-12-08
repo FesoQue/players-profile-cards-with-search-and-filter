@@ -262,7 +262,7 @@ nav {
   margin: 3.5em 0 0;
 }
 .mutd {
-  width: 65px;
+  width: 64px;
   margin-right: 1em;
 }
 .button a {
@@ -274,19 +274,16 @@ nav {
   color: var(--clr-darkgrey);
   text-transform: capitalize;
   margin-left: 1em;
-  border: 2.5px solid var(--clr-darkgrey);
+  background-color: var(--primary-clr-red);
+  border: 2.5px solid var(--primary-clr-red);
+  color: var(--primary-clr-white);
   box-shadow: var(--dark-shadow);
   border-radius: var(--radius);
   transition: all 0.4s ease;
 }
-.button a:hover {
-  background-color: var(--primary-clr-red);
-  border: 2.5px solid var(--primary-clr-red);
-  color: var(--primary-clr-white);
-}
 .border-left {
   display: inline-block;
-  height: 60px;
+  height: 55px;
   width: 3px;
   background-color: var(--primary-clr-red);
   border-radius: var(--radius);
