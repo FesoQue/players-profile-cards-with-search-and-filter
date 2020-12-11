@@ -409,7 +409,7 @@ scrollLinks.forEach((links) => {
     linksContainer.style.height = 0;
     const nav = links.parentElement.parentElement.parentElement.parentElement;
     const currentLink = e.currentTarget;
-
+    
     links === currentLink
       ? nav.classList.add("close")
       : nav.classList.remove("close");
@@ -419,11 +419,16 @@ scrollLinks.forEach((links) => {
 // **** DISPLAY CONTACT MODAL
 contactLink.addEventListener("click", () => {
   contact.classList.toggle("show-modal");
+  // **** prevent scrolling when modal is sshowing ****
+  (!contact.classList.contains('show-modal')) ?
+    document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden';
+
 });
 
 // *** CLOSE CONTACT MODAL ****
 closeModal.addEventListener("click", () => {
   contact.classList.remove("show-modal");
+  document.body.style.overflow = 'scroll';
 });
 
 // **** LOAD ITEMS ****
